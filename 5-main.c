@@ -6,7 +6,7 @@
  * main - Entry point
  *
  * Return: Always 0 (Success)
-*/
+ */
 int main(void)
 {
 	binary_tree_t *root;
@@ -19,11 +19,11 @@ int main(void)
 	binary_tree_insert_right(root, 128);
 	binary_tree_print(root);
 
-	ret = binary_tree_is_leaf(root);
-	printf("Is %d a leaf: %d\n", root->n, ret);
-	ret = binary_tree_is_leaf(root->right);
-	printf("Is %d a leaf: %d\n", root->right->n, ret);
-	ret = binary_tree_is_leaf(root->right->right);
-	printf("Is %d a leaf: %d\n", root->right->right->n, ret);
+	ret = binary_tree_is_root(root);
+	printf("Is %d a root: %d\n", root->n, ret);
+	ret = binary_tree_is_root(root->right);
+	printf("Is %d a root: %d\n", root->right->n, ret);
+	ret = binary_tree_is_root(root->right->right);
+	printf("Is %d a root: %d\n", root->right->right->n, ret);
 	return (0);
 }
