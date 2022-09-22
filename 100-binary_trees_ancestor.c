@@ -4,7 +4,7 @@
  * @first: first node
  * @second: second_node
  * Return: pointer to ancestor found or NULL if none is found
-*/ 
+*/
 binary_tree_t *search_ancestor(const binary_tree_t *first,
 	const binary_tree_t *second)
 {
