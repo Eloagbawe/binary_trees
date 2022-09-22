@@ -11,7 +11,7 @@ size_t count_height(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 	left_height = count_height(tree->left);
-    right_height = count_height(tree->right);
+	right_height = count_height(tree->right);
 	if (left_height >= right_height)
 		return (left_height + 1);
 	else
